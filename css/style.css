@@ -1,0 +1,422 @@
+
+/*全体共通
+最初から設定してあるので特に変更
+しなくても大丈夫です♪
+-----------------*/
+body{
+	font-family: Roboto, "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+	line-height: 1.75;
+	font-size: 16px;
+	/* width: 960px; */
+}
+
+/*パディングをサイズ内側にする処理*/
+* {
+	padding:0;
+	margin:0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/* ファーストビュー設定 */
+.title-space{
+	height: 400px;
+	background-image: url(../img/mainbg.png);
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+/* FVテキスト設定 */
+.title{
+	font-size: 48px;
+	margin-bottom: 40px;
+	color: white;
+}
+
+.sub-title{
+	font-size: 24px;
+	color: white;
+}
+
+/*ナビ中ロゴの大きさ幅調整*/
+.nav-flex{
+	height: 80px;
+	background-color: #f6f6f6;
+	border: solid 2px;
+	border-color: #efefef; 
+	display: flex;
+	/* justify-content: flex-end; */
+}
+
+/*リンクのレイアウト設定*/
+.nav-list{
+	font-size: 21px;
+	display: flex;
+	justify-content: flex-end;
+	margin: auto;
+}
+
+/*ロゴ間隔調整*/
+.nav-list>li{
+	padding: 15px;
+}
+
+/*ロゴの大きさ調整*/
+.nav-logo{
+	width: 60%;
+	margin:15px;
+	margin-left: 50px;
+}
+
+/*Aboutの文字調整など*/
+
+.item-1{
+	text-align: center;
+	font-size: 36px;
+	color: #ffd61d;
+	font-weight: 300;
+	margin-top: 120px;
+	margin-bottom: 24px;
+}
+
+.about-text{
+	text-align: center;
+}
+
+.about-text-1{
+	font-size: 24px;
+	margin-bottom: 64px;
+	font-weight: 200;
+}
+
+.about-text-2{
+	margin-bottom: 40px;
+}
+
+.about-text-3{
+	margin-bottom: 20px;
+}
+
+.about-text-4{
+	margin-bottom: 20px;
+}
+
+.about-text-5{
+	margin-bottom: 80px;
+}
+
+/*スライドする画像の大きさ設定*/
+.slide-image{
+	display: flex;
+	justify-content: center;
+	max-width: 100%;
+	height: auto;
+}
+
+
+/*コースの文字設定*/
+.item-2{
+	text-align: center;
+	font-size: 36px;
+	color: #222222;
+	font-weight: 300;
+	margin-top: 64px;
+	margin-bottom: 64px;
+}
+
+.course-text-1{
+	text-align: center;
+	margin-bottom: 64px;
+}
+
+/*コンテントボックス1個目調整*/
+.content-box-1{
+	display: flex;
+	background: lightgray;
+
+}
+
+.content-box-image-1{
+	width: 50%;
+}
+
+.content-box-text-1{
+	width: 50%;
+	display: flex;
+	align-items: center;
+	text-align: left;
+	/* margin-left: 48px; */
+}
+
+.content-box-image-file-1{
+	width: 100%;
+}
+
+.content-box-text-text-1{
+	margin-left: 48px;
+	width: 85%;
+}
+
+.content-box-title-text-1{
+	margin-bottom: 40px;
+}
+
+/*コンテントボックス2個目調整*/
+.content-box-2{
+	display: flex;
+	flex-direction: row-reverse;
+	background: lightgray;
+}
+
+.content-box-image-2{
+	width: 50%;
+}
+
+.content-box-text-2{
+	width: 50%;
+	display: flex;
+	align-items: center;
+	/* margin-left: 48px; */
+}
+
+.content-box-image-file-2{
+	width: 100%;
+}
+
+.content-box-text-text-2{
+	margin-left: 48px;
+	width: 85%;
+}
+
+.content-box-title-text-2{
+	margin-bottom: 40px;
+}
+
+/*コンテントボックス3個目調整*/
+.content-box-3{
+	display: flex;
+	background: lightgray;
+
+}
+
+.content-box-image-3{
+	width: 50%;
+}
+
+.content-box-text-3{
+	width: 50%;
+	display: flex;
+	align-items: center;
+	text-align: left;
+	/* margin-left: 48px; */
+}
+
+.content-box-image-file-3{
+	width: 100%;
+}
+
+.content-box-text-text-3{
+	margin-left: 48px;
+	width: 85%;
+}
+
+.content-box-title-text-3{
+	margin-bottom: 40px;
+}
+
+/*ニュース行間調整*/
+.item-3{
+	text-align: center;
+	font-size: 36px;
+	color: #ffd61d;
+	font-weight: 300;
+	margin-top: 64px;
+	margin-bottom: 24px;
+}
+
+.news-subtext{
+	margin-bottom: 64px;
+	text-align: center;
+	font-size: 24px;
+}
+
+/*ニュースボックスの設定*/
+.news-box{
+	display: flex;
+}
+
+.news-content{
+	justify-content: space-between;
+}
+
+.news-date{
+	margin-top: 32px;
+}
+
+.news-text{
+	margin-top: 24px;
+	width: 85%;
+	height: auto;
+}
+
+/*moreボタンの設定*/
+
+.more-button{
+	text-align: center;
+	background-color: #ffd61d;
+	color: white;
+	height: 60px;
+	width: 300px;
+	font-size: 21px;
+	margin-top: 56px;
+	margin-bottom: 48px;
+}
+.more-button-outer{
+	text-align: center;
+}
+
+/* マップの中央ぞろえ */
+.center{
+	text-align: center;
+}
+
+
+/*会社情報詳細*/
+.access-space{
+	background-color: rgb(238, 238, 238);
+}
+
+.item-4{
+	text-align: center;
+	font-size: 36px;
+	color: #222222;
+	font-weight: 300;
+	padding-top: 64px;
+	margin-bottom: 24px;
+}
+
+.access-subtitle{
+	margin-bottom: 64px;
+	text-align: center;
+	font-size: 24px;
+}
+
+dt{
+	float: left;
+	padding-bottom: 24px;
+}
+
+dd{
+	margin-left: 120px;
+	padding-bottom: 24px;
+}
+
+.access-info{
+	display: flex;
+	justify-content: center;
+	margin-top: 64px;
+	padding-bottom: 80px;
+}
+
+/*問い合わせ詳細*/
+.item-5{
+	text-align: center;
+	font-size: 36px;
+	color: #222222;
+	font-weight: 300;
+	margin-top: 64px;
+	margin-bottom: 24px;
+}
+
+.contact-subtitle{
+	margin-bottom: 64px;
+	text-align: center;
+	font-size: 24px;
+}
+
+.contact-text1{
+	text-align: center;
+	margin-bottom: 32px;
+}
+
+.contact-text2{
+	text-align: center;
+	margin-bottom: 80px;
+}
+
+/* フォーム調整 */
+.border-line{
+	width: 328px;
+	height: 36px;
+	border: 1px solid ;
+	border-color: #707070;
+}
+
+.form-outer{
+	display: flex;
+	justify-content: center;
+}
+
+.textarea-space{
+	width: 328px;
+	height: 108px;
+	border: 1px solid ;
+	border-color: #707070;
+	margin-top: 32px;
+}
+
+.email-box{
+	margin-bottom: 40px;
+}
+
+.submit-button{
+	background-color: #ffd61d;
+	color: white;
+	height: 54px;
+	width: 298px;
+	font-size: 18px;
+	margin-top: 40px;
+	margin-bottom: 150px;
+}
+.submit-button-outer{
+	text-align: center;
+}
+
+.check-box{
+	margin-right: 40px;
+	height: 24px;
+	width: 24px;
+}
+
+/* ページトップへ移動するボタン設置 */
+.page_top_button{
+	position: fixed;
+	bottom: 0px; right: 50px;
+}
+
+.page_top{
+	width: 60px;
+	height: 60px;
+	font-size: 12px;
+	color: white;
+	text-align: center;
+	background:  #707070;
+}
+
+footer{
+	width: 100%;
+	height: 100px;
+	font-size: 18px;
+	color: white;
+	padding-top:32px;
+	padding-bottom: 32px;
+	text-align: center;
+	background-color: #707070;
+}
